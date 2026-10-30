@@ -96,7 +96,7 @@ function render(){
 function say(msg,load){const o=$("out");o.hidden=false;o.replaceChildren();
  if(url){const im=mk("img");im.id="pic";im.alt="Your plant photo";im.src=url;o.append(im);im.after&&0}
  const w=mk("div",null,load?"load":"");if(load)w.append(mk("div",null,"spin"));w.append(mk("p",msg,"sub"));w.style.marginTop="14px";o.append(w)}
-const GEMINI_KEY="PASTE_YOUR_GEMINI_KEY_HERE";
+const GEMINI_KEY="AQ.Ab8RN6J6vi5A0d25UpdHhH4jILBQr84Xcs5VP-jWKe5SJShIkA";
 const MODEL="gemini-2.5-flash";
 const PROMPT=`You are a plant pathologist helping small farmers in India. Look at the attached photo of a crop plant.
 Reply with ONLY one JSON object with keys "valid" (false if no plant/leaf is visible), "en" and "hi" (same content in English and in simple Hindi).
